@@ -7,6 +7,7 @@
     --btn-bg-color: #F5F4FA;
     --bg-grey-color: #F5F4FA;
     --bg-dark-color: #2F303A;
+    --border-hdr-color: #ECECEC;
 }
 
 body {
@@ -49,9 +50,12 @@ body {
 }
 
 /* навигация сайта */
+.header{
+    border-bottom: 1px solid var(--border-hdr-color);;
+}
 .gen-nav{
     display: flex;
-    align-items: center;;
+    align-items: center;
 }
 .main-nav{
     align-items: center;
@@ -99,13 +103,11 @@ body {
     margin-right: auto;
     margin-left: auto;
     width: 1200px;
-    outline: 2px solid tomato;
     padding: 0 15px;
 }
 
 /* герой */
 .hero {
-    outline: 2px solid tomato;
     background-color: var(--bg-dark-color);
 }
 .hero .title{
@@ -145,6 +147,7 @@ body {
     cursor: pointer;
 }
 .button.filter {
+    display: block;
     font-family: inherit;
     color: var(--title-color);
     background-color: var(--btn-bg-color);
@@ -276,6 +279,38 @@ body {
 .button.filter.current {
     background-color: var(--accent-color);
     color: var(--primary-white-color);
+}
+.menu.list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+.menu .item{
+    margin-right: 8px;
+    
+}
+.product.list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.product .item{
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.product .item:nth-child(3n){
+    margin-right: 0;
+}
+.product .item:nth-last-child(-n + 3){
+    margin-bottom: 0;
+}
+.product .project{
+    margin-top: 20px;
+    margin-bottom: 4px;
+}
+.product .desc{
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 /* футер */
