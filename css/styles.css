@@ -122,12 +122,6 @@ body {
     padding-top: 94px;
     padding-bottom: 94px;
 }
-.section:nth-child(odd){
-    background-color: teal;
-}
-.section:nth-child(even){
-    background-color: red;
-}
 
 .centered{
     text-align: center;
@@ -180,7 +174,15 @@ body {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-
+.features .list{
+    display: flex;
+}
+.features .item{
+    width: 270px ;
+}
+.features .item:not(:last-child){
+    margin-right: 30px;
+}
     
 
 .features .title {
@@ -205,11 +207,21 @@ body {
     margin-bottom: 50px;
     
 }
+
 .working .title,
 .team .title {
     color: var(--title-color);
     font-size: 36px;
     line-height: 1.16;
+}
+.works.list{
+    display: flex;
+}
+.works .item{
+    margin-right: 30px;
+}
+.works .item:nth-child(3n){
+    margin-right: 0;
 }
 /* Наша команда */
 .team {
@@ -217,6 +229,19 @@ body {
     padding-bottom: 94px;
     background-color: var(--bg-grey-color);
 }
+.team .list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.team .item{
+    width: 270px;
+    margin-right: 30px;
+}
+.team .item:nth-child(4n){
+    margin-right: 0;
+}
+
+
 
 .team .title{
     margin-top: 0;
