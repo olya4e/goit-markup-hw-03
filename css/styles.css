@@ -32,6 +32,7 @@ body {
 
 /* логотип */
 .logo {
+    margin-right: 93px;
     color: var(--logo-color);
 }
 .logo-web {
@@ -39,6 +40,7 @@ body {
 }
 .logo,
 .logo-web{
+    display: flex;
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -47,7 +49,24 @@ body {
 }
 
 /* навигация сайта */
+.gen-nav{
+    display: flex;
+    align-items: center;;
+}
+.main-nav{
+    align-items: center;
+    display: flex;
+}
+.navigation{
+    display: flex;
+}
+.navigation .item:not(:last-child){
+    margin-right: 50px;
+}
 .navigation .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     color: var(--title-color);
     font-weight: 500;
     line-height: 1.14;
@@ -62,6 +81,13 @@ body {
     color: var(--accent-color);
 }
 /* контакти */
+.contacts{
+    display: flex;
+    margin-left: auto;
+}
+.contacts .item + .item{
+    margin-left: 50px;
+}
 .contacts .link {
     color: var(--primary-text-color);
     font-weight: 500;
@@ -74,6 +100,7 @@ body {
     margin-left: auto;
     width: 1200px;
     outline: 2px solid tomato;
+    padding: 0 15px;
 }
 
 /* герой */
@@ -109,6 +136,8 @@ body {
 
 /* button */
 .button.main {
+    display: block;
+    margin: auto;
     border-radius: 4px;
     padding: 10px 32px;
     min-width: 200px;
