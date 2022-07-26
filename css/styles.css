@@ -280,9 +280,10 @@ body {
     background-color: var(--accent-color);
     color: var(--primary-white-color);
 }
-.menu.list{
+.menu.list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin-top: 0;
     margin-bottom: 50px;
 }
