@@ -111,8 +111,11 @@ body {
     background-color: var(--bg-dark-color);
 }
 .hero .title{
+    width: 700px;
     margin-top: 0;
     margin-bottom: 40px;
+    margin-right: auto;
+    margin-left: auto;
     color: var(--primary-white-color);
     font-weight: 900;
     font-size: 44px;
@@ -254,18 +257,28 @@ body {
 }
 
 .team .name {
-    margin-top: 30px;
-    margin-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
     color: var(--title-color);
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.18;    
+    line-height: 1.18;
+    text-align: center;    
 }
 .team .position {
+    padding-bottom: 30px;
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 0;
     font-size: 16px;
-    line-height: 1.18;    
+    line-height: 1.18;
+    text-align: center;    
+}
+.team-card-title{
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    border-color: var(--primary-white-color);
 }
 /* портфолио */
 .portfolio .project{
@@ -307,7 +320,8 @@ body {
 .product .item:nth-last-child(-n + 3){
     margin-bottom: 0;
 }
-.project-img{
+.project-img,
+.team-img {
     display: block;
     border: 0;
 }
@@ -320,7 +334,7 @@ body {
     margin-top: 0;
     margin-bottom: 20px;
 }
-.project-title{
+.project-title {
     border: 1px solid #EEEEEE;
     border-top: 1px solid transparent;
     padding-left: 24px;
