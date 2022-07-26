@@ -50,8 +50,8 @@ body {
 }
 
 /* навигация сайта */
-.header{
-    border-bottom: 1px solid var(--border-hdr-color);;
+.page-header{
+    border-bottom: 1px solid var(--border-hdr-color);
 }
 .gen-nav{
     display: flex;
@@ -134,6 +134,7 @@ body {
 .button.main {
     display: block;
     margin: auto;
+    border: 1px solid transparent;
     border-radius: 4px;
     padding: 10px 32px;
     min-width: 200px;
@@ -146,9 +147,15 @@ body {
     letter-spacing: 0.06em;
     cursor: pointer;
 }
+.button.main:hover{
+    background: #188CE8;
+}
 .button.filter {
     display: block;
     font-family: inherit;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 6px 22px;
     color: var(--title-color);
     background-color: var(--btn-bg-color);
     font-weight: 500;
@@ -180,9 +187,7 @@ body {
 .features .list{
     display: flex;
 }
-.features .item{
-    width: 270px ;
-}
+
 .features .item:not(:last-child){
     margin-right: 30px;
 }
@@ -237,14 +242,11 @@ body {
     flex-wrap: wrap;
 }
 .team .item{
-    width: 270px;
     margin-right: 30px;
 }
 .team .item:nth-child(4n){
     margin-right: 0;
 }
-
-
 
 .team .title{
     margin-top: 0;
@@ -305,6 +307,11 @@ body {
 .product .item:nth-last-child(-n + 3){
     margin-bottom: 0;
 }
+.project-img{
+    display: block;
+    border: 0;
+}
+
 .product .project{
     margin-top: 20px;
     margin-bottom: 4px;
@@ -313,20 +320,28 @@ body {
     margin-top: 0;
     margin-bottom: 20px;
 }
+.project-title{
+    border: 1px solid #EEEEEE;
+    border-top: 1px solid transparent;
+    padding-left: 24px;
+}
 
 /* футер */
 address {
     font-style: normal;
 }
 
-.footer {
+.page-footer {
     background-color: var(--bg-dark-color);
 }
 .logo.footer{
+    padding-top: 60px;
+    padding-bottom: 20px;
     color: var(--primary-white-color);
 }
 
 .adds {
+    padding-bottom: 60px;
     line-height: 1.7;
 }
 .adds .location {
